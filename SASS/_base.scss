@@ -29,7 +29,10 @@ Gery-dark-3:#999
   --colour-grey-dark-1: #333;
   --colour-grey-dark-2: #777;
   --colour-grey-dark-3: #999;
+
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+  --line: 1px solid var(--colour-grey-light-2);
 }
 * {
   margin: 0;
