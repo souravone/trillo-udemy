@@ -34,6 +34,13 @@ Gery-dark-3:#999
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.1);
   --line: 1px solid var(--colour-grey-light-2);
 }
+
+$bp-largest: 75em; //1200/16
+$bp-large: 68.75em;
+$bp-medium: 56.25em;
+$bp-small: 37.5em;
+$bp-smallest: 31.25em;
+
 * {
   margin: 0;
   padding: 0;
@@ -47,7 +54,11 @@ Gery-dark-3:#999
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 62.5%; //10/16 =0.625
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%; // 8/16 = 0.5
+  }
 }
 
 body {
